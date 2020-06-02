@@ -21,7 +21,7 @@ P = np.array([a,b])
 Q = np.array([0,0]) 
 R = np.array([p,0])
 S = np.array([x,0])
-
+print(P[0],P[1])
 #Generating all lines
 x_PQ = line_gen(P,Q)
 x_QR = line_gen(Q,R)
