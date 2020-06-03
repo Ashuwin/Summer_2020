@@ -1,31 +1,18 @@
-Solution by linear algebra:
-
 $\angle{PSQ}$ is the angle between $\vec{SP}$ and $\vec{SQ}$
 
 $\angle{PSR}$ is the angle between $\vec{SP}$ and $\vec{SR}$
-
-Equation of line $$\vec{SQ} = \vec{Q}-\vec{S}$$
-$$\vec{SQ} = \myvec{0\\0} - \myvec{\frac{8}{3}\\0}$$
-$$\vec{SQ} = \myvec{\frac{-8}{3}\\0}$$
-
-Equation of line $$\vec{SP} = \vec{P}-\vec{S}$$
-$$\vec{SP} = \myvec{2.25\\3.3072} - \myvec{\frac{8}{3}\\0}$$
-$$\vec{SP} = \myvec{-0.416\\3.3072}$$
-
-Equation of line $$\vec{SR} = \vec{R}-\vec{S}$$
-$$\vec{SR} = \myvec{6\\0} - \myvec{\frac{8}{3}\\0}$$
-$$\vec{SR} = \myvec{3.33\\0}$$
-
-Angle between two lines $\vec{u}$ and $\vec{v}$ =$\cos{\theta}=$ $\frac{\vec{u}.\vec{v}}{\norm{\vec{u}}.\norm{\vec{v}}}$
-
-$$\cos{\angle{PSR}} = \frac{\vec{SP}.\vec{SR}}{\norm{\vec{SP}}.\norm{\vec{SR}}}$$
-$$\cos{\angle{PSR}} = \frac{\myvec{-0.416\\3.3072}.\myvec{3.33\\0}}{(3.33).\frac{10}{3}}$$
-$$\cos{\angle{PSR}} = -0.1248$$
-$$\angle{PSR} = \cos^{-1}{-0.1248} = 97.17\degree$$
-
-$$\cos{\angle{PSQ}} = \frac{\vec{SP}.\vec{SQ}}{\norm{\vec{SP}}.\norm{\vec{SQ}}}$$
+\\
+Finding the Scalar Products:
+$$(\vec{P} - \vec{S})^T(\vec{Q} - \vec{S}) = \norm{\vec{P} - \vec{S}}\norm{\vec{Q} - \vec{S}}\cos{\angle{PSQ}}$$
+$$(\myvec{2.25\\3.3072} - \myvec{\frac{8}{3}\\0})^T(\myvec{0\\0} - \myvec{\frac{8}{3}\\0}) = (3.33)\frac{8}{3}\cos{\angle{PSQ}}$$
 $$\cos{\angle{PSQ}} = \frac{\myvec{-0.416\\3.3072}.\myvec{\frac{-8}{3}\\0}}{(3.33).\frac{8}{3}}$$
 $$\cos{\angle{PSQ}} = 0.1249$$
 $$\angle{PSQ} = \cos^{-1}{0.1249} = 82.82\degree$$
 
-Therefore, $\angle{PSR}>\angle{PSQ}$
+$$(\vec{P} - \vec{S})^T(\vec{R} - \vec{S}) = \norm{\vec{P} - \vec{S}}\norm{\vec{R} - \vec{S}}\cos{\angle{PSR}}$$
+$$(\myvec{2.25\\3.3072} - \myvec{\frac{8}{3}\\0})^T(\myvec{6\\0} - \myvec{\frac{8}{3}\\0}) = (3.33)\frac{10}{3}\cos{\angle{PSR}}$$
+$$\cos{\angle{PSR}} = \frac{\myvec{-0.416\\3.3072}.\myvec{3.33\\0}}{(3.33).\frac{10}{3}}$$
+$$\cos{\angle{PSR}} = -0.1248$$
+$$\angle{PSR} = \cos^{-1}{-0.1248} = 97.17\degree$$
+
+Therefore, $\angle{PSR} > \angle{PSQ}$
