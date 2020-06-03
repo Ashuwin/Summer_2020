@@ -4,15 +4,14 @@ $\angle{PSR}$ is the angle between $\vec{SP}$ and $\vec{SR}$
 \\
 Finding the Scalar Products:
 $$(\vec{P} - \vec{S})^T(\vec{Q} - \vec{S}) = \norm{\vec{P} - \vec{S}}\norm{\vec{Q} - \vec{S}}\cos{\angle{PSQ}}$$
-$$(\myvec{2.25\\3.3072} - \myvec{\frac{8}{3}\\0})^T(\myvec{0\\0} - \myvec{\frac{8}{3}\\0}) = (3.33)\frac{8}{3}\cos{\angle{PSQ}}$$
-$$\cos{\angle{PSQ}} = \frac{\myvec{-0.416\\3.3072}.\myvec{\frac{-8}{3}\\0}}{(3.33).\frac{8}{3}}$$
-$$\cos{\angle{PSQ}} = 0.1249$$
-$$\angle{PSQ} = \cos^{-1}{0.1249} = 82.82\degree$$
+$$\angle{PSQ} = 82.82\degree$$
 
 $$(\vec{P} - \vec{S})^T(\vec{R} - \vec{S}) = \norm{\vec{P} - \vec{S}}\norm{\vec{R} - \vec{S}}\cos{\angle{PSR}}$$
-$$(\myvec{2.25\\3.3072} - \myvec{\frac{8}{3}\\0})^T(\myvec{6\\0} - \myvec{\frac{8}{3}\\0}) = (3.33)\frac{10}{3}\cos{\angle{PSR}}$$
-$$\cos{\angle{PSR}} = \frac{\myvec{-0.416\\3.3072}.\myvec{3.33\\0}}{(3.33).\frac{10}{3}}$$
-$$\cos{\angle{PSR}} = -0.1248$$
-$$\angle{PSR} = \cos^{-1}{-0.1248} = 97.17\degree$$
+$$\angle{PSR} = 97.17\degree$$
+
+The above calculations are found by executing the following python file 
+\begin{lstlisting}
+codes/finding_angles.py
+\end{lstlisting}
 
 Therefore, $\angle{PSR} > \angle{PSQ}$
